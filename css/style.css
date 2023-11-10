@@ -659,6 +659,7 @@ header .nav .toggle-menu:hover + ul {
 @media (max-width: 767px) {
   .staff .container {
     flex-direction: column;
+    align-items: center;
     gap: 40px;
   }
 }
