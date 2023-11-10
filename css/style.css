@@ -652,9 +652,15 @@ header .nav .toggle-menu:hover + ul {
 }
 
 .staff .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .staff .container {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .staff .box .image {
