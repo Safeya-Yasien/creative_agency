@@ -546,6 +546,76 @@ header .nav .toggle-menu:hover + ul {
 }
 
 .pricing .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.pricing .box {
+  text-align: center;
+  background-color: #598697;
+  border-radius: 15px;
+
+}
+
+.pricing .box .head {
+  padding: 30px 15px;
+  position: relative;
+}
+
+.pricing .box .head h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.pricing .box .head .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-color: black;
+  background: linear-gradient(to right, #598697, #87a9b4);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing .box .head .dolar {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.pricing .box .head .month {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.pricing .box ul {
+  margin-top: 100px;
+}
+
+.pricing .box ul li {
+  padding: 20px;
+}
+
+.pricing .box ul li i {
+  margin-right: 10px;
+}
+
+.pricing .box a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  border: 1px solid black;
+  width: fit-content;
+  margin: 30px auto;
+  color: blue;
 }
 
 .pricing .box {
